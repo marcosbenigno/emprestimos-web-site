@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+}
+ html, body {
+     width: 100%;
+     height: 100%;
+     background-color: #F4F4FA;
+}
+ .container {
+     background-color: #F4F4FA;
+     width: 100%;
+}
+ .boundaries {
+     width: 900px;
+     display:block;
+     position:relative;
+     margin-left: auto;
+     margin-right: auto;
+}
+ .spinner {
+     width: 25px;
+     height: 25px;
+}
+/*header sem espaçamento de letras*/
+ header {
+     width: 470px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     margin-left: auto;
+     margin-right: auto;
+}
+ header h1 {
+     height: 68px;
+     width: 207px;
+     font-size: 30px;
+     font-weight: 700;
+     text-align: right;
+     padding: 20px;
+}
+ .logo {
+     height: 68px;
+     border-left: 1px solid grey;
+     padding: 20px;
+}
+/*nav*/
+ nav {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+ .color-btn {
+     padding: 7px;
+     font-weight: 700;
+     border-radius: 5px;
+     color: #ffffff;
+     letter-spacing: 1px;
+     box-shadow: none;
+     font-size: 12px;
+     border: none;
+}
+ #novo-emprestimo-btn {
+     background-color: #6DCA5D;
+}
+ .sub-nav {
+     letter-spacing: 1px;
+     font-size: 12px;
+     padding: 7px;
+     background-color: #ffffff;
+     border-radius: 5px;
+     justify-content: space-between;
+     align-items: center;
+     display: inline-block;
+    /*width: 375px;
+     */
+}
+ .sub-nav-item {
+     border-left: 1px solid #000000;
+     padding-left: 5px;
+     padding-right: 5px;
+     background-color: #ffffff;
+     border: none;
+     border-left: 1px solid #000000;
+     color: #000000;
+     text-decoration: none;
+}
+ .sub-nav-item:first-child {
+     border-left: none;
+}
+ .bg-circle {
+     width: 20px;
+     height: 20px;
+     padding: 7px;
+     background-color: #ffffff;
+     border-radius: 20px;
+}
+ .bg-circle button {
+     background-color: #ffffff;
+     border: none;
+}
+ .icon-nav{
+     width: 20px;
+     height: 20px;
+}
+ .emprestimos-grid {
+     width: 900px;
+     display: flex;
+     margin-top: 40px;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+}
+ .emprestimo {
+     background-color: #ffffff;
+     border-radius: 6px;
+     display: flex;
+     align-items: center;
+     width: 408px;
+     margin: 10px;
+     font-size: 13px;
+     padding: 10px;
+}
+ .standard-label {
+     font-weight: 700;
+}
+ .label-data {
+     padding-left: 3px;
+}
+ .holding-key-icon {
+     width: 60px;
+     height: 60px;
+     padding: 10px;
+}
+ .emprestimo-sub-section {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-evenly;
+     width: 270px;
+}
+ .line {
+     padding-top: 1px;
+     padding-bottom: 1px;
+     letter-spacing: 0.5px;
+}
+ .devolver-btn {
+     background-color: #E17A7A;
+     width: 200px;
+     margin-top: 3px;
+     margin-left: auto;
+     margin-right: auto;
+}
+ footer {
+     width: 100%;
+     height: 50px;
+     background-color: #376F80;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+}
+ footer span {
+     color: #ffffff;
+     font-size: 12px;
+     font-weight: 700;
+     letter-spacing: 1px;
+}
+/*blur*/
+ .blur {
+     width:100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     background-color: rgba(175,175,175,0.27);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     z-index: 3333;
+}
+ .blur div {
+     background-color: #ffffff;
+     border-radius: 14px;
+     width: 500px;
+     padding: 20px;
+}
+ .header-blur {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ .header-blur h1 {
+     font-weight: 700;
+     padding: 10px;
+     font-size: 20px;
+}
+ .close-btn {
+     width: 20px;
+     height: 20px;
+}
+ #form-novo-emprestimo {
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+ #form-novo-emprestimo span {
+     font-weight: 700;
+     margin-left: -205px;
+     padding-bottom: 5px;
+}
+ #form-novo-emprestimo input, #form-novo-emprestimo select {
+     width: 250px;
+     height: 30px;
+     border: solid 1px grey;
+     border-radius: 4px;
+     margin-bottom: 10px;
+}
+ #form-novo-emprestimo button {
+     margin-top: 10px;
+     background-color: #6DCA5D;
+}
+ .invisible {
+     display: none;
+}
+ 

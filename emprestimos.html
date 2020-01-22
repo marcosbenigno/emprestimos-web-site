@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="static/style/emp.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="blur-novo-emprestimo" class="blur invisible">
+            <div>
+                <span class="header-blur">
+					<h2>Novo Empréstimo</h2>
+					<img class="close-btn" src="static/image/close.png" />
+				</span>
+                <section>
+                    <form id="form-novo-emprestimo" method="POST" action="/novo-emprestimo/">
+                        <span>CPF</span>
+                        <input type="text" name="novo-emprestimo-cpf" />
+                        <span>SALA</span>
+                        <select name="nome-emprestimo-sala">
+                            {% for chave in chaves: %}
+                            <option value="{{chave.desc_chave}}">{{chave.desc_chave}}</option>
+                            {% endfor %}
+                        </select>
+
+                        <button type="submit" class="color-btn" id="novo-emprestimo-blur-btn" name="emprestar">NOVO EMPRÉSTIMO</button>
+
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <div class="boundaries">
+            <header>
+                <h1>Monitoramento de Chaves</h1>
+                <img class="logo" src="static/image/logo.png" />
+            </header>
+            <nav>
+                <a class="color-btn" id="novo-emprestimo-btn">NOVO EMPRÉSTIMO</a>
+                <div class="sub-nav">
+                    <a href="" class="sub-nav-item" id="emprestimos-btn"><b>EMPRÉSTIMOS</b></a>
+                    <a href="" class="sub-nav-item" id="historico-btn">HISTÓRICO</a>
+                    <a href="" class="sub-nav-item" id="cadastro-chaves-btn">CADASTRO DE CHAVES</a>
+                </div>
+
+                <div class="bg-circle">
+                    <button id="bell-button"><img class="icon-nav" src="static/image/bell.png" /></button>
+                </div>
+
+                <div class="bg-circle">
+                    <button id="search-button"><img class="icon-nav" src="static/image/search.png" /></button>
+                </div>
+            </nav>
+
+            <section class="emprestimos-grid">
+
+        </div>
+        </section>
+        <footer>
+            <span>Monitoramento de Chaves   |   Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais</span>
+        </footer>
+    </div>
+
+    </div>
+    </div>
+    <script src="static/script/emp.js"></script>
+</body>
+
+</html>`
